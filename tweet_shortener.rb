@@ -18,7 +18,7 @@ array = tweet.split(" ")
 new_array = []
 array.each do |word|
   if dictionary.keys.include?(word.downcase)
-    new_array << dictionary[word]
+    new_array << dictionary[word.downcase]
   else
     new_array << word
 end
